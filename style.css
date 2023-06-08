@@ -1,0 +1,68 @@
+.main-container {
+  display: flex;
+}
+
+.container {
+  width: 215px;
+  height: 100vh;
+  border: 2px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  overflow-y: auto;
+}
+
+.item {
+  width: 200px;
+  height: 80px;
+  background-color: #f1f1f1;
+  border: 1px solid #999;
+  padding: 5px;
+  /* margin: 5px; */
+  margin-bottom: 10px;
+  cursor: move;
+}
+
+.item.dragging {
+  opacity: 0.5;
+}
+
+.container.draggingInContainer {
+  border-style: dashed;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #b9b8b8;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #878686;
+}
+
+.button {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.buttonClass {
+  margin-top: 6px;
+}
